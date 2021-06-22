@@ -1,0 +1,44 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "teams-customizer-client-side-solution",
+    "id": "15c77277-4caa-4f2e-b61a-425d576347c4",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "GroupMember.Read.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Group.Read.All"
+      }
+    ],
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": ""
+    },
+    "features": [
+      {
+        "title": "Application Extension - Deployment of custom action.",
+        "description": "Deploys a custom action with ClientSideComponentId association",
+        "id": "57e134c8-fe50-430f-bad1-af8bb18858d7",
+        "version": "1.0.0.0",
+        "assets": {
+          "elementManifests": [
+            "elements.xml",
+            "ClientSideInstance.xml"
+          ]
+        }
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/teams-customizer.sppkg"
+  }
+}

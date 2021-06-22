@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "teams-customizer-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/teamsCustomizer/TeamsCustomizerApplicationCustomizer.js",
+          "manifest": "./src/extensions/teamsCustomizer/TeamsCustomizerApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "TeamsCustomizerApplicationCustomizerStrings": "lib/extensions/teamsCustomizer/loc/{locale}.js"
+  }
+}
